@@ -2,12 +2,18 @@
 // Welcome to Astro! Everything between these triple-dash code fences
 // is your "component frontmatter". It never runs in the browser.
 console.log('To-Do!');
+import '../styles/global.css';
+import ToDoList from "../components/ToDoList.jsx";
+
+const title = "To Do List Page"
 ---
+
 <!-- Below is your "component template." It's just HTML, but with
     some magic sprinkled in to help you build great templates. -->
 <html>
   <body>
     <h1>To Do list</h1>
+    <ToDoList client:load />
   </body>
 </html>
 <style>

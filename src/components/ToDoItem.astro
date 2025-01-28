@@ -1,0 +1,8 @@
+---
+const { task, onDelete } = Astro.props;
+---
+
+<li>
+  <span>{task}</span>
+  <button onClick={() => onDelete(task)}>❌</button>
+</li>
